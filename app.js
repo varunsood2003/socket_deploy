@@ -3,6 +3,8 @@ import { Server } from "socket.io";
 const io = new Server({
   cors: {
     origin: "https://househunt-azure.vercel.app",
+    methods: ["GET", "POST"],
+    credentials: true
   },
 });
 
